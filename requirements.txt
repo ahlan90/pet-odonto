@@ -1,6 +1,6 @@
 beautifulsoup4==4.8.1
 dj-static==0.0.6
-Django==2.2.8
+Django==2.2.10
 django-appconf==1.0.3
 django-autocomplete-light==3.5.0
 django-bootstrap-datepicker-plus==3.0.5
@@ -19,7 +19,7 @@ greenlet==0.4.15
 gunicorn==19.9.0
 Markdown==3.1.1
 psycopg2==2.8.5
-Pillow==6.2.1
+Pillow==6.2.2
 python-dateutil==2.8.0
 python-decouple==3.0
 pytz==2019.3
