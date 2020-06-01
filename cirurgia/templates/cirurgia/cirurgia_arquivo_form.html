@@ -1,0 +1,20 @@
+{% extends "cirurgia/base_cirurgia.html" %}
+
+{% block cirurgia %}
+
+{% load crispy_forms_tags %}
+
+<div class="my-3 p-3 bg-white rounded shadow-sm">
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form  }}
+
+            <button class="btn btn-primary btn-block">Salvar</button>
+        </form>
+    </div>
+</div>
+
+{{ form.media }}
+
+{% endblock cirurgia %}

@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="d-flex justify-content-end">
+    <a class="btn btn-success btn-sm" href="{% url 'raca-add' %}">
+        <i class="fa fa-plus mr-2"></i>
+        Nova
+    </a>
+</div>
+
+
+<div class="my-2 p-3 bg-white rounded shadow-sm">
+    <div class="pt-3">
+        <table id="clientes" class="table table-striped table-bordered"
+               style="width:100%" data-server-side="true"
+               data-ajax="/api/racas/?format=datatables">
+            <thead>
+            <tr>
+                <th data-data="name">Nome</th>
+                <th data-data="botoes">Ações</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+{% endblock content %}
+
+{% block scripts %}
+
+{{ block.super }}
+
+<script>
+
+$(document).ready(function() {
+  $('#clientes').DataTable({
+    "sDom": "ftp",
+    "oLanguage": {
+        "sSearch": "",
+        "sSearchPlaceholder": "Pesquisar...",
+        "oPaginate": {
+            "sNext": "Próximo",
+            "sPrevious": "Anterior",
+            "sFirst": "Primeiro",
+            "sLast": "Último"
+        },
+    },
+    "columns": [
+        null,
+        { "width": "10%" }
+    ]
+  });
+});
+
+</script>
+
+{% endblock %}

@@ -1,0 +1,218 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row my-3">
+    <div class="col-6">
+        <a href="{% url 'cliente-selecao' %}" class="btn btn-outline-green w-100 h-100">
+
+            <div class="card-block mt-3">
+                <h2><i class="fa fa-stethoscope fa-2x"></i></h2>
+            </div>
+            <div class="text-center mt-2">
+                <h5 class="card-title">
+                    <i class="fa fa-plus-circle"></i>
+                    Consulta
+                </h5>
+            </div>
+
+        </a>
+    </div>
+    <div class="col-6">
+        <a href="{% url 'cirurgia-cliente-selecao' %}" class="btn btn-outline-danger w-100 h-100">
+
+            <div class="card-block mt-3">
+                <h2><i class="fa fa-briefcase-medical fa-2x"></i></h2>
+            </div>
+            <div class="text-center mt-2">
+                <h5 class="card-title">
+                    <i class="fa fa-plus-circle"></i>
+                    Cirurgia
+                </h5>
+            </div>
+
+        </a>
+    </div>
+</div>
+<hr>
+<div class="row my-3">
+    <div class="col-6">
+        <a href="{% url 'cliente-lista' %}" class="btn btn-outline-green w-100 h-100">
+
+            <div class="card-block mt-2">
+                <h2><i class="fa fa-users"></i></h2>
+            </div>
+            <div class="text-center">
+                        <span class="card-title">
+                            <small>
+                                <i class="fa fa-ellipsis-v mr-1"></i>
+                                Clientes
+                            </small>
+                        </span>
+            </div>
+
+        </a>
+    </div>
+    <div class="col-6">
+        <a href="{% url 'paciente-list' %}" class="btn btn-outline-green w-100 h-100">
+
+            <div class="card-block mt-2">
+                <h2><i class="fa fa-tooth"></i></h2>
+            </div>
+            <div class="text-center mb-2">
+                        <span class="card-title">
+                            <small>
+                                <i class="fa fa-ellipsis-v mr-1"></i>
+                                Pacientes
+                            </small>
+                        </span>
+            </div>
+
+        </a>
+    </div>
+
+</div>
+
+<div class="row my-3">
+    <div class="col-6">
+        <a href="{% url 'clinica-list' %}" class="btn btn-outline-green w-100 h-100">
+
+            <div class="card-block mt-2">
+                <h2><i class="fa fa-clinic-medical"></i></h2>
+            </div>
+            <div class="text-center mb-2">
+                        <span class="card-title">
+                            <small>
+                                <i class="fa fa-ellipsis-v mr-1"></i>
+                                Clínicas
+                            </small>
+                        </span>
+            </div>
+
+        </a>
+    </div>
+    <div class="col-6">
+        <a href="{% url 'alteracao-odontologica-list' %}" class="btn btn-outline-green w-100 h-100">
+
+            <div class="card-block mt-2">
+                <h2><i class="fa fa-clipboard-list"></i></h2>
+            </div>
+            <div class="text-center">
+                        <span class="card-title">
+                            <small>
+                                <i class="fa fa-ellipsis-v mr-1"></i>
+                                Alt. Odont.
+                            </small>
+                        </span>
+
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="row my-3">
+    <div class="col-6">
+        <a href="{% url 'cirurgia-list' %}" class="btn btn-outline-green w-100 h-100">
+
+            <div class="card-block mt-2">
+                <h2><i class="fa fa-book-medical"></i></h2>
+            </div>
+            <div class="text-center mb-2">
+                        <span class="card-title">
+                            <small>
+                                <i class="fa fa-ellipsis-v mr-1"></i>
+                                Cirurgias
+                            </small>
+                        </span>
+            </div>
+
+        </a>
+    </div>
+    <div class="col-6">
+        <a href="{% url 'consulta-list' %}" class="btn btn-outline-green w-100 h-100 text-green">
+            <div class="card-block mt-2">
+                <h2><i class="fa fa-notes-medical"></i></h2>
+            </div>
+            <div class="text-center mb-2">
+                <span class="card-title">
+                    <small>
+                        <i class="fa fa-ellipsis-v mr-1"></i>
+                        Consultas
+                    </small>
+                </span>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+<!--<div class="row my-3">-->
+<!--    <div class="col-6">-->
+
+<!--        <a href="{% url 'exame-list' %}" class="btn btn-outline-green w-100 h-100">-->
+<!--            <div class="card-block mt-2">-->
+<!--                <h2><i class="fa fa-file-medical-alt"></i></h2>-->
+<!--            </div>-->
+<!--            <div class="text-center">-->
+<!--                        <span class="card-title">-->
+<!--                            <small>-->
+<!--                                <i class="fa fa-ellipsis-v mr-1"></i>-->
+<!--                                Exames-->
+<!--                            </small>-->
+<!--                        </span>-->
+<!--            </div>-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <div class="col-6">-->
+<!--        <a href="{% url 'foto-list' %}" class="btn btn-outline-green w-100 h-100">-->
+<!--            <div class="card-block mt-2">-->
+<!--                <h2><i class="fa fa-camera-retro"></i></h2>-->
+<!--            </div>-->
+<!--            <div class="text-center mb-2">-->
+<!--                        <span class="card-title">-->
+<!--                            <small>-->
+<!--                                <i class="fa fa-ellipsis-v mr-1"></i>-->
+<!--                                Fotos-->
+<!--                            </small>-->
+<!--                        </span>-->
+<!--            </div>-->
+<!--        </a>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="row my-3">
+        <div class="col-6">
+
+        <a href="{% url 'raca-list' %}" class="btn btn-outline-green w-100 h-100">
+            <div class="card-block mt-2">
+                <h2><i class="fa fa-paw"></i></h2>
+            </div>
+            <div class="text-center">
+                        <span class="card-title">
+                            <small>
+                                <i class="fa fa-ellipsis-v mr-1"></i>
+                                Raças
+                            </small>
+                        </span>
+            </div>
+        </a>
+    </div>
+    <div class="col-6">
+
+        <a href="{% url 'veterinario-list' %}" class="btn btn-outline-green w-100 h-100">
+            <div class="card-block mt-2">
+                <h2><i class="fa fa-syringe"></i></h2>
+            </div>
+            <div class="text-center">
+                        <span class="card-title">
+                            <small>
+                                <i class="fa fa-ellipsis-v mr-1"></i>
+                                Anestesistas
+                            </small>
+                        </span>
+            </div>
+        </a>
+    </div>
+</div>
+
+{% endblock %}
