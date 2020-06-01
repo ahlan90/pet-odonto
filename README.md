@@ -1,13 +1,14 @@
 # PetOdonto
-Sistema para Gestão de Dentistas de Odontológicos
+**Sistema para Gestão de Dentistas de Odontológicos**
 
 Uma instância deste sistema está disponível no link:
 http://petsorriso-dev.herokuapp.com/
 
+``` 
 Credenciais:
 Login: user
 Senha: petodonto123
-
+```
 
 ### Instalação
 
@@ -55,3 +56,11 @@ Rode o projeto:
 ```
 python manage.py runserver
 ```
+
+#### Principais Tecnologias utilizadas
+
+* Django Framework
+* Django Rest Framework
+* Bootstrap 4
+* JQuery
+* Heroku 
